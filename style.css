@@ -1,4 +1,20 @@
+#logo {
+    float: left;
+}
 .topmenu {
+    float: left;
+    margin: 0 auto;
+}
+.title {
+    margin: 0 auto;
+}
+.leftbox {
+    float: left;
+}
+.rightbox {
+    float: right;
+}
+footer.section {
     float: left;
     margin: 0 auto;
 }
