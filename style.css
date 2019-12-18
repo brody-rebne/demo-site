@@ -1,3 +1,7 @@
+body {
+    float:none;
+    position: static;
+}
 /*
 #logo {
     position: relative;
