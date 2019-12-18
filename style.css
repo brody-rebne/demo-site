@@ -6,6 +6,11 @@
     margin: 0 auto;
 }
 .title {
+    float: left;
+    margin: 0 auto;
+}
+.boxes {
+    float:left;
     margin: 0 auto;
 }
 .leftbox {
@@ -14,7 +19,7 @@
 .rightbox {
     float: right;
 }
-footer.section {
+footer section {
     float: left;
     margin: 0 auto;
 }
