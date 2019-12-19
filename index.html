@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <head>
-<body>
+<body id="body">
     <header>
         <img id="toplogo" src="https://via.placeholder.com/56" alt="Placeholder Logo">
         <nav id="topmenu">
@@ -38,26 +38,26 @@
                 </p>
             </article>
         </section>
+        <div id="timebox">
+            <div id="time"> </div>
+            <button id="updatetime" onclick="updateTime()">Update</button>
+        </div>
     </main>
     <footer>
-        <section>
-            <nav>
-                <ul class="ul-vertical">
-                    <li><a href="">Link1</a></li>
-                    <li><a href="">Link2</a></li>
-                    <li><a href="">Link3</a></li>
-                    <li><a href="">Link4</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
+        <nav>
+            <ul class="ul-vertical">
+                <li><a href="">Link1</a></li>
+                <li><a href="">Link2</a></li>
+                <li><a href="">Link3</a></li>
+            </ul>
             <ul class="ul-vertical">
                 <li>Contact1</li>
                 <li>Contact2</li>
                 <li>Contact3</li>
-                <li>Contact4</li>
             </ul>
-        </section>
+        </nav>
     </footer>
+    <button id="invisbutton" onclick="confirmHide()"></button>
+    <script src="demo-site.js"></script>
 </body>
 </html>
