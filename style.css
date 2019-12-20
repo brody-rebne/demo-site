@@ -76,7 +76,6 @@ ul {
     width: 100%;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #0000ff;
 }
 
 img {
@@ -119,12 +118,10 @@ article p {
     font-size: 36pt;
 }
 
-#updatetime {
+.button {
     position: relative;
     text-decoration: none;
-    background-color: #00f;
     border: none;
-    color: #fff;
     padding: 10px 20px;
     text-align: center;
     display: inline-block;

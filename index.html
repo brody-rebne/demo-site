@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <title>made you look</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 <head>
-<body id="body">
+<body id="body" class="primary">
     <header>
         <img id="toplogo" src="https://via.placeholder.com/56" alt="Placeholder Logo">
         <nav id="topmenu">
@@ -16,35 +17,38 @@
     </header>
     <main>
         <h1 class="title">
-            BIG TITLE
+            <script>
+                document.write('Welcome, ' + username + exclamations);
+            </script>
         </h1>
         <section class="center">
             <article class="leftbox">
                 <img src="https://via.placeholder.com/100" alt="Placeholder Image">
                 <p>
-                    Placeholder text for the first box. When I can be bothered to type out real text it will go here. Not able to figure out the width issues yet.
+                    Placeholder text for the first box.
                 </p>
             </article>
             <article class="rightbox">
                 <img src="https://via.placeholder.com/100" alt="Placeholder Image">
                 <p>
-                    Placeholder text for the second box. You can imagine that there are illustrations in the placeholder images.
+                    Placeholder text for the second box.
                 </p>
             </article>
             <article class="leftbox">
                 <img src="https://via.placeholder.com/100" alt="Placeholder Image">
                 <p>
-                    Placeholder text for the third box. You can also imagine that this is description text for various services offered by my company.
+                    Placeholder text for the third box.
                 </p>
             </article>
         </section>
         <div id="timebox">
             <div id="time"> </div>
-            <button id="updatetime" onclick="updateTime()">Update</button>
+            <button class="button" class="accent" onclick="updateTime();themeLight()">Light Theme</button>
+            <button class="button" class="accent" onclick="updateTime();themeDark()">Dark Theme</button>
         </div>
     </main>
-    <footer>
-        <nav>
+    <footer class="accent">
+        <!-- <nav>
             <ul class="ul-vertical">
                 <li><a href="">Link1</a></li>
                 <li><a href="">Link2</a></li>
@@ -55,7 +59,7 @@
                 <li>Contact2</li>
                 <li>Contact3</li>
             </ul>
-        </nav>
+        </nav> -->
     </footer>
     <button id="invisbutton" onclick="confirmHide()"></button>
     <script src="demo-site.js"></script>
