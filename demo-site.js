@@ -1,20 +1,17 @@
 
 function login() {
-    var username = prompt('Enter username');
+    var username = prompt('Enter username (enter anything or try null)');
     while (username === null || username === "") {
         username = prompt("Please enter a username or I'll have to call security");
     }
     var password = prompt('Enter password');
     while (password !== 'password123' && password !== 'f')  {
-        password = prompt('Incorrect password. Please try again');
+        password = prompt('Incorrect password. Please try again (try password123)');
     }
-    var welcomes = prompt('How enthusastically would you like to be welcomed?');
+/*    var welcomes = prompt('How enthusastically would you like to be welcomed?');
     if (welcomes < 1) {
         welcomes = 1;
-    }
-    while = 0; i < welcomes; i++) {
-
-    }
+    }*/
 }
 window.onload = login();
 
