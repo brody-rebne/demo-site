@@ -1,14 +1,14 @@
-var username = prompt('Enter username');
-var password = prompt('Enter password');
-var welcomes = prompt('How enthusastically would you like to be welcomed?');
 
 function login() {
+    var username = prompt('Enter username');
     while (username === null || username === "") {
         username = prompt("Please enter a username or I'll have to call security");
     }
+    var password = prompt('Enter password');
     while (password !== 'password123' && password !== 'f')  {
         password = prompt('Incorrect password. Please try again');
     }
+    var welcomes = prompt('How enthusastically would you like to be welcomed?');
     if (welcomes < 1) {
         welcomes = 1;
     }
