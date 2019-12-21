@@ -10,19 +10,32 @@ html {
     overflow: hidden;
 }
 
+body {
+    overflow: auto;
+    background-color: #ddd;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 a {
     text-decoration: none;
 }
 
 header {
+    position: fixed;
+    top: 0;
     height: 80px;
+    width: 100%;
     background-color: #0000ff;
 }
 
-body {
-    overflow: auto;
-    background-color: #ddd;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+header * {
+    z-index: 1;
+}
+
+main {
+    position: absolute;
+    top: 80px;
+    width: 100%;
 }
 
 p {
@@ -36,37 +49,24 @@ ul {
 }
 
 #toplogo {
+    position: fixed;
     height: 54px;
     margin: 10px 10px 10px 10px;
 }
 
-#topmenu {
-    position: absolute;
-    top: 0;
-    right: 10%;
-    width: 70%;
-    margin: auto;
-}
-
-#topmenu ul {
-    float: right;
-    vertical-align: center;
-}
-
-#topmenu ul li {
-    position: relative;
-    display: inline;
-    vertical-align: middle;
-    margin: auto 10px;
-    color: #fff;
-}
-
-#topmenu a {
-    color: #fff;
+#logout {
+    position: fixed;
+    top: 16px;
+    right: 24px;
+    border: solid 2.5px;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .center {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -83,7 +83,8 @@ img {
 }
 
 article {
-    position: static;
+    position: absolute;
+    display: block;
     left: 10%;
     width: 80%;
     height: 106px;
@@ -96,16 +97,19 @@ article * {
 }
 
 article p {
-    display: inline;
-    margin: 10px;
+    position: absolute;
+    left: 100px;
+    margin: 20px;
 }
 
 .leftbox>* {
+    display: block;
     float: left;
     text-align: left;
 }
 
 .rightbox>* {
+    display: block;
     float: right;
     text-align: right;
 }

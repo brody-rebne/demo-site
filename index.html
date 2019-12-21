@@ -3,22 +3,17 @@
 <head>
     <title>made you look</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="demo-site.js"></script>
 <head>
 <body id="body" class="primary">
     <header>
         <img id="toplogo" src="https://via.placeholder.com/56" alt="Placeholder Logo">
-        <nav id="topmenu">
-            <ul>
-                <li><a href="">Menu1</a></li>
-                <li><a href="">Menu2</a></li>
-                <li><a href="">Menu3</a></li>
-            </ul>
-        </nav>
+        <p id="logout" onclick="login()">Log Out</p>
     </header>
     <main>
         <h1 class="title">
             <script>
-                document.write('Welcome, ' + username + exclamations);
+                document.write(login())
             </script>
         </h1>
         <section class="center">
@@ -61,7 +56,6 @@
             </ul>
         </nav> -->
     </footer>
-    <button id="invisbutton" onclick="confirmHide()"></button>
-    <script src="demo-site.js"></script>
+    <!-- <button id="invisbutton" onclick="confirmHide()"></button> -->
 </body>
 </html>

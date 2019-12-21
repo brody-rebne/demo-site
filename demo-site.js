@@ -1,22 +1,27 @@
-
 function login() {
+    var exclamations;
     var username = prompt('Enter username (enter anything or try null)');
-    while (username === null || username === "") {
+    while (username === null || username === null) {
         username = prompt("Please enter a username or I'll have to call security");
     }
     var password = prompt('Enter password');
     while (password !== 'password123' && password !== 'f')  {
         password = prompt('Incorrect password. Please try again (try password123)');
     }
-/*    var welcomes = prompt('How enthusastically would you like to be welcomed?');
+    var welcomes = prompt('How enthusastically would you like to be welcomed?');
+    var exclamation = '!';
+    welcomes = Number(welcomes);
+    while (typeof(welcomes) !== 'number' || welcomes === null) {
+        welcomes = prompt("Please enter a number");
+        welcomes = Number(welcomes);
+    }
     if (welcomes < 1) {
         welcomes = 1;
-    }*/
-}
-window.onload = login();
-
-function logout() {
-    
+    }
+    for (var i = 0; i < welcomes; i++) {
+        exclamations = exclamations + exclamation;
+    }
+    return 'Welcome, ' + username + exclamations;
 }
 
 function updateTime() {
